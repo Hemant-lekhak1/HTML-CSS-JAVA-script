@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle">
+            <p>Hemant</p> 
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background: #102030;
+        }
+
+        .circle {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+            border-radius: 50%;
+            background: #00ffee;
+            transition: all .2s linear;
+            display: grid;
+            place-items: center;
+            font-size: 15px;
+            color: #00ffee;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            overflow: hidden;
+            box-shadow: 0 0 40px #00ffee ;
+        }
+
+        .circle:hover {
+            
+            scale: 2;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>
